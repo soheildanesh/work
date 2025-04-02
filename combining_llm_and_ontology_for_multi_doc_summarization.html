@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News Aggregator Comparison</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 80vh;
+  }
+
+  .aggregator {
+    width: 48%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aggregator iframe {
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+  }
+
+  .aggregator-footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .title-bar {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 20px;
+    color: #333;
+  }
+
+  .aggregator-footer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .aggregator-footer a:hover {
+    background-color: #0056b3;
+  }
+
+  /* Styles for the full report iframe */
+  .report-container {
+    margin: 40px auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .report-container iframe {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="title-bar">
+  Combining LLM with Ontology for Better Multi-document Summarization.
+</div>
+
+<div class="description">
+Large documenet sets often run beyond the limited length of LLM context window. Additionally given the diverse topical landscape in a large corpus of documents, injecting them all into a single context might not produce the desired results. We have developed an approach that uses a topical ontology to first cluster documents by topic around central concepts of the corpus prior to LLM based summary generation. <b> We show significant improvemnts in terms of topical precision and recall over ChatGPT Deep Research in summarizing the daily news in politics for Politics March 14th 2925. </b>
+</div>
+
+<div class="container">
+  <div class="aggregator">
+    <h2>ChatGPT Deep Researh Summary (Politics News for 3/14)</h2>
+    <iframe src="https://soheildanesh.github.io/work/chatGPT_research_us_political_news_march_14.html" title="ChatGPT Summaries"></iframe>
+    <div class="aggregator-footer">
+      <!-- TODO Later <a href="YOUR_GOOGLE_FORM_LINK_AGGREGATOR_1" target="_blank">Vote & Comment</a> --> 
+    </div>
+  </div>
+
+  <div class="aggregator">
+    <h2>TopicForest Summary (Our Method) </h2>
+    <iframe src="https://soheildanesh.github.io/work/html_webpage_delivery_march_14_topicforest_politics.html" title="TopicForest Summaries"></iframe>
+    <div class="aggregator-footer">
+      <!-- TODO Later <a href="YOUR_GOOGLE_FORM_LINK_AGGREGATOR_2" target="_blank">Vote & Comment</a> -->
+    </div>
+  </div>
+</div>
+
+<div class="report-container">
+  <h2> Full Report: Outperforming ChatGPT Deep Research in Daily News Summarization Using a Topical Ontology</h2>
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vRE9sAc7EwnMM-cC0_weYybH1He5LT5mSTBuGzYd_BKhD38YF4-i9ElwEolj1q0U1NG7kR14gbzviLi/pub?embedded=true"></iframe>
+</div>
+
+</body>
+</html>
