@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News Aggregator Comparison</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        min-height: 80vh; /* Ensures content fills vertical space */
+        margin-bottom: 50px; /* Added spacing between containers */
+        align-items: stretch; /* Makes sure both aggregators stretch to fill height */
+    }
+
+    .aggregator {
+        width: 48%;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden; /* Ensures rounded corners apply to children */
+    }
+
+    .aggregator h2 {
+        text-align: center;
+        padding: 15px 10px;
+        margin: 0;
+        font-size: 1.2em;
+        background-color: #eaf1f9; /* Lighter header background */
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .aggregator iframe {
+        flex-grow: 1;
+        width: 100%;
+        border: none;
+    }
+
+    .aggregator-footer {
+        padding: 10px;
+        text-align: center;
+        background-color: #f0f0f0;
+        border-top: 1px solid #ddd;
+    }
+
+    .title-bar {
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 28px;
+        font-weight: bold;
+        background-color: #e0e0e0;
+        margin-bottom: 30px;
+        color: #222;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .description {
+        text-align: center;
+        margin: 0 auto 40px auto;
+        max-width: 900px;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 0 20px;
+        color: #555;
+    }
+
+    .aggregator-footer a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .aggregator-footer a:hover {
+        background-color: #0056b3;
+    }
+
+    /* Styles for the full report iframe */
+    .report-container {
+        margin: 40px auto;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .report-container iframe {
+        width: 100%;
+        height: 800px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    /* New style for spacing and insight text */
+    .comparison-insight {
+        text-align: center;
+        margin: 40px auto 60px auto; /* More spacing */
+        max-width: 800px;
+        font-size: 1.1em;
+        line-height: 1.8;
+        padding: 20px 30px;
+        background-color: #f0f8ff; /* Light blue background */
+        border-left: 5px solid #007bff; /* Accent border */
+        color: #333;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        font-style: italic;
+    }
+
+    .comparison-insight strong {
+        color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="title-bar">
+    TopicForest VS Several Other Search Engines (Google, Google News, Perplexity, ChatGPT Deep Research) in Several Contexts (News, Academic Articles, General Web)
+</div>
+
+<div class="description">
+    Below, you'll find side-by-side comparisons showcasing TopicForest's ability to provide more relevant, concise, and contextually rich information compared to existing solutions. These examples demonstrate our superior aggregation, synthesis, and organization capabilities across news, academic, and general web contexts.
+</div>
+
+
+<div class="container">
+    <div class="aggregator">
+        <h2>Google News. Query: Nvidia - June 25 2025</h2>
+        <iframe src="https://soheildanesh.github.io/work/google_news-nvidia_topic_june_25.html" title="Google News"></iframe>
+        <div class="aggregator-footer">
+            </div>
+    </div>
+
+    <div class="aggregator">
+        <h2>TopicForest News. Query: Nvidia - June 25 2025 </h2>
+        <iframe src="https://soheildanesh.github.io/work/topic_forest_news_nvidia_june_25.html" title="TopicForest News"></iframe>
+        <div class="aggregator-footer">
+            </div>
+    </div>
+</div>
+
+<div class="comparison-insight">
+    <strong>Insight: News Aggregation.</strong> TopicForest provides a more focused and synthesized overview of trending news, cutting through the noise and delivering core insights faster than traditional news aggregators. Notice how key themes emerge clearly.
+</div>
+
+<div class="container">
+    <div class="aggregator">
+        <h2> Perplexity. Prompt: Summarize Recent News on Artificial Intelligence - June 30 2025</h2>
+        <iframe src="https://soheildanesh.github.io/work/AI news - perplexity - can you summarize recent news on the topic of artificial intelligence 6_30_2025 10 0 15 PM.html" title="Perplexity AI News"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+
+    <div class="aggregator">
+        <h2>TopicForest News. Query: Artificial Intelligence - June 30 2025 </h2>
+        <iframe src="https://soheildanesh.github.io/work/AI News topic forest 6_30_2025 10 10 12 PM.html" title="TopicForest AI News"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+</div>
+
+<div class="comparison-insight">
+    <strong>Insight: AI News Synthesis.</strong> When summarizing complex topics like AI, TopicForest excels at distilling broad information into actionable points, offering a more structured and comprehensive summary compared to general-purpose AI tools.
+</div>
+
+<div class="container">
+    <div class="aggregator">
+        <h2> Perplexity. Query: 'Taurine Supplementation' - June 30 2025</h2>
+        <iframe src="https://soheildanesh.github.io/work/taurine supplementation perplexity 6_30_2025 10：06：33 PM.html" title="Perplexity Scholar"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+
+    <div class="aggregator">
+        <h2>TopicForest Scholar. Query 'Taurine Supplementation' - June 30 2025 </h2>
+        <iframe src="https://soheildanesh.github.io/work/taurine supplementation topicforest 6_30_2025 10：15：58 PM.html" title="TopicForest Scholar"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+</div>
+
+<div class="comparison-insight">
+    <strong>Insight: Academic Research (Taurine).</strong> For specialized academic queries, TopicForest's "Scholar" mode provides deeper, more relevant scientific articles and precise summaries, essential for researchers and students.
+</div>
+
+<div class="container">
+    <div class="aggregator">
+        <h2> Perplexity. Query: 'Evaluation of Causal Inference Methodologies' - June 30 2025</h2>
+        <iframe src="https://soheildanesh.github.io/work/evaluation of causal inference methodologies perplexity 6_30_2025 9 52 46 PM.html" title="Perplexity Causal Inference"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+
+    <div class="aggregator">
+        <h2>TopicForest Scholar. Query: 'Evaluation of Causal Inference Methodologies' - June 30 2025 </h2>
+        <iframe src="https://soheildanesh.github.io/work/evaluation of causal inference methodologies topicforest web 6_30_2025 9 52 46 PM.html" title="TopicForest Causal Inference"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+</div>
+
+<div class="comparison-insight">
+    <strong>Insight: Academic Research (Causal Inference).</strong> In highly technical academic fields, TopicForest demonstrates its ability to pinpoint and synthesize complex methodologies, offering a clear advantage for expert users.
+</div>
+
+<div class="container">
+    <div class="aggregator">
+        <h2> Perplexity. Query 'Android vs IOS' - June 30 2025</h2>
+        <iframe src="https://soheildanesh.github.io/work/android vs iois _ perplexity 6_30_2025 9 32 42 PM.html" title="Perplexity Web"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+
+    <div class="aggregator">
+        <h2>TopicForest Web. Query: 'Android vs IOS' - June 30 2025 </h2>
+        <iframe src="https://soheildanesh.github.io/work/andoird vs ios topicforest 6_30_2025 10 13 33 PM.html" title="TopicForest Web"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+</div>
+
+<div class="comparison-insight">
+    <strong>Insight: General Web Comparison.</strong> Even for common comparison queries, TopicForest extracts the most salient points and offers balanced perspectives, making it an invaluable tool for quick and accurate understanding.
+</div>
+
+
+<div class="container">
+    <div class="aggregator">
+        <h2> Perplexity. Query 'Keen Triple beam Northbeam' - July 2 2025</h2>
+        <iframe src="https://soheildanesh.github.io/work/Keen Triple Whale Northbeam Perplexity 7_2_2025 1 43 46 PM.html" title="Perplexity Specific Web"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+
+    <div class="aggregator">
+        <h2>TopicForest Web. Query: 'Keen Triple beam Northbeam' - June 30 2025 </h2>
+        <iframe src="https://soheildanesh.github.io/work/Keen Triple whale northbeam TopicForest 6_30_2025.html" title="TopicForest Specific Web"></iframe>
+        <div class="aggregator-footer">
+        </div>
+    </div>
+</div>
+
+<div class="comparison-insight">
+    <strong>Insight: Niche Web Queries.</strong> TopicForest demonstrates its power in understanding and summarizing information on highly specific or niche topics, an area where generic search engines often struggle to provide cohesive results.
+</div>
+
+</body>
+</html>
